@@ -78,6 +78,10 @@ function searchForWord(word) {
                 currentExample.className = 'example';
                 results.appendChild(currentExample);
             });
+
+            const divider = document.createElement('div');
+            divider.className = 'divider';
+            results.appendChild(divider);
         });
     });
 }

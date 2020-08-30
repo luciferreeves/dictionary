@@ -87,3 +87,10 @@ body {
 .synonymLink:hover {
     text-decoration: underline;
 }
+
+.divider {
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 30px auto;
+}
