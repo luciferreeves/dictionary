@@ -41,6 +41,20 @@ searchBox.addEventListener('keypress', (e) => {
                 definition.innerHTML = detail.def;
                 definition.className = 'definition';
                 results.appendChild(definition);
+
+                if (detail.exp.length) {
+                    const exampleArea = document.createElement('p');
+                    exampleArea.innerHTML = 'Examples:';
+                    exampleArea.className = 'exampleArea';
+                    results.appendChild(exampleArea);
+                }
+
+                detail.exp.forEach(example => {
+                    const currentExample = document.createElement('p');
+                    currentExample.innerHTML = `${example}`;
+                    currentExample.className = 'example';
+                    results.appendChild(currentExample);
+                });
             });
         });
     }

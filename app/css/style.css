@@ -41,6 +41,7 @@ body {
     color: #bdbdbd;
     text-transform: uppercase;
     padding-left: 5px;
+    user-select: none;
 }
 
 .results {
@@ -51,7 +52,7 @@ body {
 }
 
 .wordType {
-    color: #e2e2e2;
+    color: #ffffff96;
     font-size: 1.5rem;
     margin-bottom: 0px;
 }
@@ -59,4 +60,16 @@ body {
 .definition {
     margin-top: 5px;
     font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.exampleArea {
+    color: #ffffff96;
+    margin-top: 0px;
+}
+
+.example {
+    font-size: 0.75rem;
+    color: #ffffff96;
+    font-style: italic;
 }
