@@ -13,7 +13,7 @@ function createWindow () {
     webPreferences: {
       nodeIntegration: true
     },
-    frame: false,
+    titleBarStyle: 'hiddenInset',
     icon: path.join(__dirname, 'icon.png'),
     resizable: false
   })
