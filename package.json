@@ -6,7 +6,8 @@
   "productName": "Dictionary",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder -mwl"
+    "build": "electron-builder -mwl",
+    "release": "build"
   },
   "repository": {
     "type": "git",
