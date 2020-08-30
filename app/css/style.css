@@ -12,6 +12,11 @@ body {
     max-height: 100vh;
 }
 
+.drag_region {
+    height: 40px;
+    -webkit-app-region: drag
+}
+
 .search_box {
     position: absolute;
     top: 40%;
