@@ -1,6 +1,6 @@
 {
   "name": "dictionary",
-  "version": "0.1.0",
+  "version": "0.1.0-beta",
   "description": "Lookup meanings of words",
   "main": "main.js",
   "scripts": {
