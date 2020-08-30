@@ -3,8 +3,10 @@
   "version": "0.1.0-beta",
   "description": "Lookup meanings of words",
   "main": "main.js",
+  "productName": "Dictionary",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder -mwl"
   },
   "repository": {
     "type": "git",
@@ -13,14 +15,47 @@
   "keywords": [
     "Dictionary"
   ],
-  "author": "Lucifer Reeves",
+  "author": {
+    "name": "Lucifer Reeves",
+    "email": "bobbyskhs@gmail.com"
+  },
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/luciferreeves/dictionary/issues"
   },
   "homepage": "https://github.com/luciferreeves/dictionary#readme",
+  "build": {
+    "appId": "com.luciferreeves.dictionary",
+    "productName": "Dictionary",
+    "copyright": "Copyright © 2020 Lucifer Reeves – Available Under GPL-3.0 License.",
+    "output": "dist",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "darkModeSupport": false
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "uninstallDisplayName": "Dictionary"
+    }
+  },
+  "linux": {
+    "synopsis": "Lookup meanings of words",
+    "description": "Lookup meanings of words",
+    "category": "Utility"
+  },
   "devDependencies": {
-    "electron": "^10.1.0"
+    "electron": "^10.1.0",
+    "electron-builder": "^22.8.0"
   },
   "dependencies": {
     "natural": "^2.1.5",
