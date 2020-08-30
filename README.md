@@ -1,4 +1,6 @@
-# Dictionary:
+# Dictionary
+
+[![Build Status](https://travis-ci.org/luciferreeves/dictionary.svg?branch=master)](https://travis-ci.org/luciferreeves/dictionary)
 
 Offline Desktop Dictionary Application Built Using Electron. Utilises Princeton Wordnet Database.
 
