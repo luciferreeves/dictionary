@@ -8,7 +8,7 @@
     "start": "electron .",
     "build": "electron-builder -mwl",
     "release": "build",
-    "test": "build"
+    "test": "electron-builder -mwl"
   },
   "repository": {
     "type": "git",
