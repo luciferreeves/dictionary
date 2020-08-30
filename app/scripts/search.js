@@ -42,16 +42,27 @@ searchBox.addEventListener('keypress', (e) => {
                 definition.className = 'definition';
                 results.appendChild(definition);
 
-                if (detail.exp.length) {
-                    const exampleArea = document.createElement('p');
-                    exampleArea.innerHTML = 'Examples:';
-                    exampleArea.className = 'exampleArea';
-                    results.appendChild(exampleArea);
+                if (detail.synonyms.length) {
+                    const synonymText = document.createTextNode('Synonyms: ');
+                    const synonymParagraph = document.createElement('p');
+                    synonymParagraph.appendChild(synonymText);
+
+                    detail.synonyms.forEach(synonym => {
+                        const currentSynonym = document.createElement('a');
+                        currentSynonym.innerHTML = synonym;
+                        currentSynonym.className = 'synonymLink';
+                        synonymParagraph.appendChild(currentSynonym);
+                        const spacer = document.createTextNode(' ');
+                        synonymParagraph.appendChild(spacer);
+                    });
+
+                    synonymParagraph.className = 'synonym'
+                    results.appendChild(synonymParagraph);
                 }
 
                 detail.exp.forEach(example => {
                     const currentExample = document.createElement('p');
-                    currentExample.innerHTML = `${example}`;
+                    currentExample.innerHTML = example;
                     currentExample.className = 'example';
                     results.appendChild(currentExample);
                 });

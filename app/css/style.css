@@ -73,3 +73,17 @@ body {
     color: #ffffff96;
     font-style: italic;
 }
+
+.synonym {
+    color: #ffffff96;
+    font-size: 1.2rem;
+}
+
+.synonymLink {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.synonymLink:hover {
+    text-decoration: underline;
+}
