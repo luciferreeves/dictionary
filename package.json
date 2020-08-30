@@ -1,0 +1,29 @@
+{
+  "name": "dictionary",
+  "version": "0.1.0",
+  "description": "Lookup meanings of words",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luciferreeves/dictionary.git"
+  },
+  "keywords": [
+    "Dictionary"
+  ],
+  "author": "Lucifer Reeves",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/luciferreeves/dictionary/issues"
+  },
+  "homepage": "https://github.com/luciferreeves/dictionary#readme",
+  "devDependencies": {
+    "electron": "^10.1.0"
+  },
+  "dependencies": {
+    "natural": "^2.1.5",
+    "wordnet-db": "^3.1.14"
+  }
+}
