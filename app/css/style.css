@@ -41,3 +41,9 @@ body {
     text-transform: uppercase;
     padding-left: 5px;
 }
+
+.results {
+    margin-top: 50px;
+    height: 50%;
+    overflow-y: scroll;
+}
